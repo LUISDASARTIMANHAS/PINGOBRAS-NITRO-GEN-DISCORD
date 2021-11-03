@@ -184,5 +184,5 @@ h2 {
   }
 button {button1: https://server-lan.glitch.me};
 
-openlinks "https://server-lan.glitch.me";
+OPENLINKS = "https://server-lan.glitch.me";
 TOKEN= OPENLINKS
