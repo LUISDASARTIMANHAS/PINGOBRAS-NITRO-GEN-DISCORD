@@ -182,4 +182,6 @@ h2 {
 .dipped {
   transform: translateY(5px);
   }
-button 1 {button1: https://server-lan.glitch.me};
+<button 1> {button1: https://server-lan.glitch.me};
+
+openlinks {"https://server-lan.glitch.me"};
