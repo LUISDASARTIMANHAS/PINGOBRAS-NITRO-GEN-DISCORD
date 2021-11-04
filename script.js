@@ -18,9 +18,9 @@ if (btn) {
     // The JS works in conjunction with the 'dipped' code in style.css
     btn.classList.toggle("dipped");
   };
- } 
+ }
 
-{OPENLINKS} ("https://server-lan.glitch.me")
+{OPENLIN} ("ht
 // This is a single line JS comment
 /*
 This is a comment that can span multiple lines 
