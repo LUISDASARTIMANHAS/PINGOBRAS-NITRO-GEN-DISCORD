@@ -6,7 +6,8 @@ This is your site JavaScript code - you can add interactivity and carry out proc
 // Use your menus or right-click / control-click and choose "Inspect" > "Console"
 console.log("Hello 🌎");
 console.writeline("olá mundo");
-console.log(int);
+console.writeline(.inteiros);
+
 
 /* 
 Make the "Click me!" button move when the visitor clicks it:
@@ -19,13 +20,8 @@ if (btn) {
     // The JS works in conjunction with the 'dipped' code in style.css
     btn.classList.toggle("dipped");
   };
- }
-    <int> = ("1");
-// This is a single line JS comment
+ // This is a single line JS comment
 /*
 This is a comment that can span multiple lines 
 - use comments to make your own notes!
 */
-{
-  int = int + 1
-  }
