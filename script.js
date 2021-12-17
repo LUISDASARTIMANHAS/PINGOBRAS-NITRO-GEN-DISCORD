@@ -19,11 +19,14 @@ if (btn) {
     btn.classList.toggle("dipped");
   };
  }
->int = ("1")
+    <int> = ("1");
 // This is a single line JS comment
 /*
 This is a comment that can span multiple lines 
 - use comments to make your own notes!
 */
 {
-  <int>
+  int = int + 1
+  
+  console.log(in);
+  }
