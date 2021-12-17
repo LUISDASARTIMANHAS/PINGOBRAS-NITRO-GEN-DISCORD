@@ -6,6 +6,7 @@ This is your site JavaScript code - you can add interactivity and carry out proc
 // Use your menus or right-click / control-click and choose "Inspect" > "Console"
 console.log("Hello 🌎");
 console.writeline("olá mundo");
+console.log(int);
 
 /* 
 Make the "Click me!" button move when the visitor clicks it:
@@ -27,6 +28,4 @@ This is a comment that can span multiple lines
 */
 {
   int = int + 1
-  
-  console.log(in);
   }
