@@ -104,20 +104,14 @@ to this section's matching END comment to see page-specific styles.
 
 /* Iamport fonts *//* Our remix on glitch button */
 
-.btndc{
+.btnedit{
 
-      background-color: gray;
-
+      background-color: red;
         border: 5px solid black;
-
         padding: 10px;
-
         width: 100%;
-
         border-radius: 15px;
-
         color: white;
-
         font-size: 15px;
 
 }
