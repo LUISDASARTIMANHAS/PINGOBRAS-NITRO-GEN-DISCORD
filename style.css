@@ -138,10 +138,8 @@ END Glitch hello-app default styles
 body {
 
       font-family: Arial, helvetica, sans-serif;
-
-       background-image: "https://cdn.glitch.global/f7a18f61-4d9e-41a1-97e0-eaad906a5b2f/mp4?v=1645567419310..mp4";
-
-       width: var(--largura);
+      background-image: url(https://tenor.com/view/super-team-welcome-to-the-team-gif-13451906.gif);
+      width: var(--largura);
 
      }
 
