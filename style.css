@@ -1,189 +1,347 @@
 /******************************************************************************
+
 START Glitch hello-app default styles
 
 The styles in this section do some minimal CSS resets, set default fonts and 
+
 colors, and handle the layout for our footer and "Remix on Glitch" button. If
+
 you're new to CSS they may seem a little complicated, but you can scroll down
+
 to this section's matching END comment to see page-specific styles.
+
 ******************************************************************************/
 
-
 /* 
+
   The style rules specify elements by type and by attributes such as class and ID
+
   Each section indicates an element or elements, then lists the style properties to apply
+
   See if you can cross-reference the rules in this file with the elements in index.html
+
 */
 
 /* Our default values set as CSS variables */
+
+@font-face{
+
+  font-family: 'Noto Sans Mono', monospace;
+
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap")
+
+    format("opentype");
+
+}
+
 :root {
-  --color-bg: #00fff9;
-  --color-text-main: #00000;
-  --color-primary: #00fff9;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+
+  --largura: 140%;
+
+  --color-padrao: white;
+
+  --color-text-main: #000000;
+
+  --color-primary: #FFFF00;
+
+  --wrapper-altura: 87vh;
+
+  --image-max-largura: 400px;
+
+  --image-margin: 1rem;
+
+  --font-principal: "Arial";
+
+  --font-family-cabecalho: "Arial";
+
+  --max-largura: 144px;
+
+  --max-altura: 544px;
+
+  --max-peso: 500;
+
+  --font-tamanho: 15px;
+
+  --font-tamanho-cabecalho: 20px;
+
+  --fundo-padrao: white;
+
+  --negrito: bold;
+
+  --espaco-em-branco: nowrap;
+
+  --X: 0px;
+
+  --Y: 390px;
+
+ 
+
+  --height: "altuta";
+
+  --Weight: "peso";
+
+  --width: "largura";
+
+  --white-space: "espaco em branco";
+
+    
+
 }
 
 /* Basic page style resets */
+
 * {
+
   box-sizing: border-box;
+
 }
+
 [hidden] {
+
   display: none !important;
+
 }
 
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
+/* Iamport fonts *//* Our remix on glitch button */
+
+.btndc{
+
+      background-color: gray;
+
+        border: 5px solid black;
+
+        padding: 10px;
+
+        width: 100%;
+
+        border-radius: 15px;
+
+        color: white;
+
+        font-size: 15px;
+
 }
 
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
+.btndc img {
+
+  margin-right: auto;
+
+}
+
+.btndc:hover {
+
+  background-color: green;
+
   cursor: pointer;
-  background: #D0D0D0;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {"https://tenor.com/view/lan-network-gif-20193244"
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
+
 }
 
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
+.btnlogin { 
+
+        background-color: blue;
+
+        border: 5px solid black;
+
+        padding: 20px;
+
+        width: 100%;
+
+        border-radius: 15px;
+
+        color: white;
+
+        font-size: 15px;
+
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
+.btnlogin img{
+
+ margin-right: auto;
+
 }
 
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
+.btnlogin:hover {
+
+  background-color: green;
+
+  cursor: pointer;
+
 }
 
-.divider {
-  padding: 0 1rem;
+ .btncadastro{
+
+        background-color: purple;
+
+        border: 5px solid black;
+
+        padding: 20px;
+
+        width: 100%;
+
+        border-radius: 15px;
+
+        color: white;
+
+        font-size: 15px;
+
 }
+
+      .btncadastro:hover{
+
+        background-color: green;
+
+        cursor: pointer;
+
+        }
+
 /******************************************************************************
+
 END Glitch hello-app default styles
+
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+
+      font-family: Arial, helvetica, sans-serif;
+
+       background-image: linear-gradient(45deg, cyan, purple);
+
+       width: var(--largura);
+
+     }
+
+h1{
+
+  text-align: center;
+
+  margin-bottom: 15px;
+
+  color: black;
+
 }
 
-/* Page structure */
+  t1{
+
+   text-align: left;
+
+   margin-bottom: 20px;
+
+   color: blue;
+
+  }
+
+t2{
+
+   text-align: right;
+
+   margin-bottom: 20px;
+
+   color: green;
+
+  }
+
+tituloblue{
+
+  text-align: center;
+
+   margin-bottom: 20px;
+
+   color: blue;
+
+  }
+
+tituloyellow{
+
+   text-align: center;
+
+   margin-bottom: 20px;
+
+   color: yellow;
+
+  }
+
+/* Page alturaure */
+
 .wrapper {
-  min-height: var(--wrapper-height);
+
+  min-height: var(--wrapper-altura);
+
   display: grid;
+
   place-items: center;
+
   margin: 0 1rem;
+
 }
+
 .content {
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
-}
 
-/* Very light scaling for our illustration */
-.title {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
+  width: 100%;
 
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
+  margin-top: 100px;
+
 }
 
 /* Instructions */
-.instructions {
-  margin: 1rem auto 0;
+
+      .instructions{
+
+        margin: 1rem auto 0;
+
+}
+
+/* Navigation grid */
+
+.divider {
+
+  padding: 0 1rem;
+
 }
 
 /* Button - Add it from the README instructions */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
 
-/* Subheading */
-h2 {
-  color: #2800FF;
+ btn,input{
+
+  border: 3px solid black;
+
+  box-sizing: border-box;
+
+  border-radius: 4px;
+
+  padding: 1px;
+
+  transition: 500ms;
+
 }
 
 /* Interactive image */
+
 .illustration:active {
+
   transform: translateY(5px);
+
 }
 
 /* Button dip
+
 - Toggling this class on and off will move it down and up again
+
 - The button transition property above determines the speed of the translate (500ms)
+
 */
-.dipped {
-  transform: translateY(5px);
- }
-  .inteiros
- {
-     for (int = 1; int <= 5; int + 1);
+
   
+
+  .dipped {
+
+  transform: translateY(5px);
+
 }
