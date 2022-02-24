@@ -196,51 +196,31 @@ tituloyellow{
 }
 
 /* Instructions */
-
       .instructions{
-
         margin: 1rem auto 0;
-
 }
-
 /* Navigation grid */
-
 .divider {
-
   padding: 0 1rem;
-
 }
 
 /* Button - Add it from the README instructions */
-
  btn,input{
-
   border: 3px solid black;
-
   box-sizing: border-box;
-
   border-radius: 4px;
-
   padding: 1px;
-
   transition: 500ms;
-
 }
 
 /* Interactive image */
-
 .illustration:active {
-
   transform: translateY(5px);
-
 }
 
 /* Button dip
-
 - Toggling this class on and off will move it down and up again
-
 - The button transition property above determines the speed of the translate (500ms)
-
 */
 
   
