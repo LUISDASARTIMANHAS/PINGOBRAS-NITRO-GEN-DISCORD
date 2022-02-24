@@ -108,66 +108,43 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-
       font-family: Arial, helvetica, sans-serif;
       background-image: url(https://tenor.com/view/super-team-welcome-to-the-team-gif-13451906.gif);
       width: var(--largura);
-
      }
 
 h1{
-
   text-align: center;
-
   margin-bottom: 15px;
-
   color: black;
-
 }
 
   t1{
-
    text-align: left;
-
    margin-bottom: 20px;
-
    color: blue;
-
   }
 
 t2{
-
    text-align: right;
-
    margin-bottom: 20px;
-
    color: green;
-
   }
 
 tituloblue{
-
   text-align: center;
-
    margin-bottom: 20px;
-
    color: blue;
-
   }
 
 tituloyellow{
-
    text-align: center;
-
    margin-bottom: 20px;
-
    color: yellow;
-
   }
 
 /* Page alturaure */
 .wrapper {
-  
   min-height: var(--wrapper-altura);
   display: grid;
   place-items: center;
