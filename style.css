@@ -1,37 +1,7 @@
-/******************************************************************************
-
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-
-you're new to CSS they may seem a little complicated, but you can scroll down
-
-to this section's matching END comment to see page-specific styles.
-
-******************************************************************************/
-
-/* 
-
-  The style rules specify elements by type and by attributes such as class and ID
-
-  Each section indicates an element or elements, then lists the style properties to apply
-
-  See if you can cross-reference the rules in this file with the elements in index.html
-
-*/
-
-/* Our default values set as CSS variables */
-
 @font-face{
-
   font-family: 'Noto Sans Mono', monospace;
-
   src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap")
-
     format("opentype");
-
 }
 
 :root {
@@ -40,7 +10,7 @@ to this section's matching END comment to see page-specific styles.
   --color-text-main: #000000;
   --color-primary: #FFFF00;
   --wrapper-altura: 87vh;
-  --image-max-largura: 400px;
+  --image-max-largura: 100px;
   --image-margin: 1rem;
   --font-principal: "Arial";
   --font-family-cabecalho: "Arial";
@@ -63,15 +33,11 @@ to this section's matching END comment to see page-specific styles.
 /* Basic page style resets */
 
 * {
-
   box-sizing: border-box;
-
 }
 
 [hidden] {
-
   display: nonee !important;
-
 }
 
 /* Iamport fonts *//* Our remix on glitch button */
@@ -167,32 +133,8 @@ h1{
   color: black;
 }
 
-  t1{
-   text-align: left;
-   margin-bottom: 20px;
-   color: blue;
-  }
-
-t2{
-   text-align: right;
-   margin-bottom: 20px;
-   color: green;
-  }
-
-tituloblue{
-  text-align: center;
-   margin-bottom: 20px;
-   color: blue;
-  }
-
-tituloyellow{
-   text-align: center;
-   margin-bottom: 20px;
-   color: yellow;
-  }
-
 /* Page alturaure */
-.wrapper {
+.tela-altura {
   min-height: var(--wrapper-altura);
   display: grid;
   place-items: center;
@@ -239,7 +181,5 @@ tituloyellow{
   
 
   .dipped {
-
   transform: translateY(5px);
-
 }
