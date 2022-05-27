@@ -14,11 +14,19 @@
 
 <chat id="chat">
 
-  <form action="/action_page.php" class="form-container">
+  <form 
+        action="/action_page.php" 
+        class="form-chat">
+    
     <h1>Bate-Papo</h1>
 
-    <label for="msg"><b>MENSAGENS:</b></label>
-    <textarea placeholder="OI tudo bem?.." name="msg" required></textarea>
+    <label 
+           for="msg"><b>MENSAGENS:</b></label>
+    <textarea 
+              placeholder="OI tudo bem?.." 
+              name="msg" 
+              required>
+    </textarea>
 
     <button type="submit" class="btn-enviar">ENVIAR</button>
     <button type="button" class="btn-cancel" onclick="closeChat()">FECHAR CHAT</button>

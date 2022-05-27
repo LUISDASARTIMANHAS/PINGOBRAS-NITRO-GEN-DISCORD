@@ -156,6 +156,7 @@ a:hover{
 }
  .dipped {
   transform: translateY(5px);
+   background: green;
 }
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-chat {
@@ -165,6 +166,14 @@ a:hover{
   border: 3px solid black;
   cursor: pointer;
   width: 75%;
+}
+.open-chat:hover{
+  cursor: not-allowed;
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+  transform: translateY(5px);
+  transition: all .3s ease-out;
+  opacity: 0.8;
 }
 
 /* The popup chat - hidden by default */
@@ -178,14 +187,15 @@ chat{
 }
 
 /* Add styles to the form container */
-.form-container {
+.form-chat {
   max-width: 100%;
   padding: 7px;
   background-color: gray;
 }
 
 /* Full-width textarea */
-.form-container textarea {
+.form-chat textarea {
+  color: black;
   width: 100%;
   padding: 10px;
   border: 5px solid black;
@@ -193,13 +203,13 @@ chat{
 }
 
 /* When the textarea gets focus, do something */
-.form-container textarea:focus {
+.form-chat textarea:focus {
   background-color: white;
   outline: none;
 }
 
 /* Set a style for the submit/login button */
-.form-container .btn {
+.btn-enviar{
   background-color: green;
   color: white;
   padding: 16px 20px;
@@ -207,13 +217,28 @@ chat{
   cursor: pointer;
   width: 100%;
 }
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
+.btn-enviar:hover{
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+  transform: translateY(5px);
+  transition: all .3s ease-out;
+  opacity: 1;
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.btn-cancel{
+  color: white;
+  padding: 16px 20px;
+  border: 5px solid black;
+  cursor: pointer;
+  width: 100%;
+  background-color: red;
+}
+.btn-cancel:hover{
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+  transform: translateY(5px);
+  transition: all .3s ease-out;
   opacity: 1;
 }

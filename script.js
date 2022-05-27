@@ -27,8 +27,10 @@ This is a comment that can span multiple lines
 */
 function openChat(){
   document.getElementById("chat2").style.display = "block";
+  btn.classList.toggle("dipped");
 }
 
 function closeChat() {
   document.getElementById("chat").style.display = "none";
+  btn.classList.toggle("dipped");
 }
