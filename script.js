@@ -25,3 +25,10 @@ if (btn) {
 This is a comment that can span multiple lines 
 - use comments to make your own notes!
 */
+function openForm() {
+  document.getElementById("chat").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("chat").style.display = "none";
+}

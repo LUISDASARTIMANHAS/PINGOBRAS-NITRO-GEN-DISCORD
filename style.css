@@ -157,9 +157,6 @@ a:hover{
  .dipped {
   transform: translateY(5px);
 }
-
-{box-sizing: border-box;}
-
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
@@ -175,20 +172,20 @@ a:hover{
 }
 
 /* The popup chat - hidden by default */
-.form-popup {
+.chat {
   display: none;
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: 5px solid black;
   z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
   max-width: 100%;
-  padding: 10px;
-  background-color: white;
+  padding: 7px;
+  background-color: gray;
 }
 
 /* Full-width textarea */
@@ -210,7 +207,7 @@ a:hover{
   background-color: green;
   color: white;
   padding: 16px 20px;
-  border: none;
+  border: 5px solid black;
   cursor: pointer;
   width: 100%;
 }
