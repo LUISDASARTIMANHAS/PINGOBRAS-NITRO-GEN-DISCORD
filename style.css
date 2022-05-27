@@ -158,21 +158,17 @@ a:hover{
   transform: translateY(5px);
 }
 /* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
+.open-chat {
+  background-color: gray;
   color: white;
-  padding: 16px 20px;
-  border: none;
+  padding: 16px;
+  border: 3px solid black;
   cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+  width: 75%;
 }
 
 /* The popup chat - hidden by default */
-.chat {
+chat{
   display: none;
   position: fixed;
   bottom: 0;

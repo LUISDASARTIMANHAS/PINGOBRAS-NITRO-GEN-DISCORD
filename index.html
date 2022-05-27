@@ -10,19 +10,20 @@
     
   </head>
   <body>
-    <button class="open-button" onclick="openForm()">Chat</button>
+    <button class="open-chat" onclick="openChat()">ABRIR CHAT</button>
 
-<div class="chat" id="chat">
+<chat id="chat">
+
   <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
+    <h1>Bate-Papo</h1>
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <label for="msg"><b>MENSAGENS:</b></label>
+    <textarea placeholder="OI tudo bem?.." name="msg" required></textarea>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="submit" class="btn-enviar">ENVIAR</button>
+    <button type="button" class="btn-cancel" onclick="closeChat()">FECHAR CHAT</button>
   </form>
-</div>
+</chat>
     <!--
       This is the body of the page
       Look at the elements and see how they appear in the rendered page on the right
