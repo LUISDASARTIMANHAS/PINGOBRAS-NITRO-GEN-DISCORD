@@ -10,9 +10,9 @@
     
   </head>
   <body>
-    <button class="open-chat" onclick="openChat()">ABRIR CHAT</button>
+    <button class="open-chat" id="chat" onclick="openChat()">ABRIR CHAT</button>
 
-<chat id="chat">
+<div class="chat" id="MyForm">
 
   <form 
         action="/action_page.php" 
@@ -31,7 +31,7 @@
     <button type="submit" class="btn-enviar">ENVIAR</button>
     <button type="button" class="btn-cancel" onclick="closeChat()">FECHAR CHAT</button>
   </form>
-</chat>
+</div>
     <!--
       This is the body of the page
       Look at the elements and see how they appear in the rendered page on the right

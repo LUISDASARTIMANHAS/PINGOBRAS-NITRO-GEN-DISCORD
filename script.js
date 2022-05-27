@@ -26,7 +26,7 @@ This is a comment that can span multiple lines
 - use comments to make your own notes!
 */
 function openChat(){
-  document.getElementById("chat2").style.display = "block";
+  document.getElementById("chat").style.display = "block";
   btn.classList.toggle("dipped");
 }
 
