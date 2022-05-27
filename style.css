@@ -179,7 +179,6 @@ a:hover{
 /* The popup chat - hidden by default */
 .chat{
   display: none;
-  position: fixed;
   border: 5px solid black;
   z-index: 9;
 }

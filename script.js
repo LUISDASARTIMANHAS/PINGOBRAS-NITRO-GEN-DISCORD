@@ -26,9 +26,9 @@ This is a comment that can span multiple lines
 - use comments to make your own notes!
 */
 function open(){
-  document.getElementById("chat").style.display = "block";
+  document.getElementById("jschat").style.display = "block";
 }
 
 function closeChat() {
-  document.getElementById("chat").style.display = "none";
+  document.getElementById("jschat").style.display = "none";
 }
