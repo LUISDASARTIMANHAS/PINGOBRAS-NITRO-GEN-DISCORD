@@ -10,25 +10,21 @@
     
   </head>
   <body>
-    <button 
-                  class="btn-open-chat btnC" 
-                  id="jsDescerBatePapo"
-                  onclick="openChat()">Bate-Papo</button>
-  
-    <!--
-      This is the body of the page
-      Look at the elements and see how they appear in the rendered page on the right
-      Each element is defined using tags, with < and > indicating where each one opens and closes
-      There are elements for sections of the page, images, text, and more
-      The elements include attributes referenced in the CSS for the page style
-    -->
-
-    <!-- The wrapper and content divs set margins and positioning -->
+    
     <div class="tela-altura">
       <div class="conteudo" role="main">
         <!-- This is the start of content for our page -->
       <h1 class="title">PINGOBRAS ADMINISTRAÇÃO!</h1>
       <div class="links"></div>
+        
+        
+        <button 
+                  class="btn-open-chat btnC" 
+                  id="jsDescerBatePapo"
+                  onclick="openForm()">
+            Bate-Papo
+          </button>
+        
         <a
         class="btn-edit-forms"
         href= "https://forms.gle/hQWQNK1ZaU3G5Xtx9"    
@@ -122,22 +118,22 @@
      </a>
   
         
-  <div class="chat" id="jsadminchat">
+  <div class="chat" id="jschat">
   <form 
         action="/action_page.php" 
         class="form-chat">
-  <h1>Bate-Papo</h1>
-  <label 
+    <h1>Bate-Papo</h1>
+    <label 
            for="msg"><b>MENSAGENS:</b></label>
-  <textarea 
+    <textarea 
               placeholder="OI tudo bem?.." 
               name="msg" 
-              required>
-  </textarea>
-  <button disabled type="submit" class="btn-enviar-msm">Enviar msm</button>
-  <button type="button" class="btn-cancel-msm" onclick="closeChat()">Fechar Bate-Papo</button>
+              >
+    </textarea>
+    <button disabled type="submit" class="btn-enviar-msm">Enviar msm</button>
+    <button type="button" class="btn-cancel-msm" onclick="closeForm()">Fechar Bate-Papo</button>
   </form>
-  </div>
+</div>
       
         
       </div></div>

@@ -1,13 +1,13 @@
 console.log("Hello 🌎");
  
-  function openChat(){
-  document.getElementById("jsadminchat").style.display = "block";
+function openForm() {
+  document.getElementById("jschat").style.display = "block";
   console.log("chat aberto!");
 }
 
-function closeChat(){
-  document.getElementById("jsadminchat").style.display = "none";
-  console.log("chat fechado!");
+function closeForm() {
+  document.getElementById("jschat").style.display = "none";
+  console.log("chat fechado");
 }
 
 var batepapoDescer = document.querySelector("#jsDescerBatePapo");

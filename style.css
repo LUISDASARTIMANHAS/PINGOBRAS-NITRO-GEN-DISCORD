@@ -126,6 +126,7 @@ h1{
   margin-bottom: 15px;
   color: black;
 }
+
 a{
   width: 75%;
   font-size: 15px;
@@ -161,7 +162,7 @@ a:hover{
   transform: translateY(5px);
 }
 .chat{
-  display: block;
+  display: none;
   border: 5px solid black;
   z-index: 9;
 }
