@@ -39,37 +39,64 @@
 }
 
 /* Iamport fonts *//* Our remix on glitch button */
-.btnedit-adm{
+.btn-edit-adm{
         background-image: linear-gradient(45deg, silver, gold);
         padding: 10px;
         color: white;
         justify-content: center;
 }
-.btnedit-error{
+.btn-edit-error{
         background-image: linear-gradient(45deg, gray, black);
         padding: 10px;
         color: white;
         justify-content: center;
 }
-       .btnedit-pingobras{
+.btn-edit-pingobras{
         background-image: linear-gradient(45deg, cyan, purple);
         padding: 10px;
         color: white;
         justify-content: center;
 }
-.btnedit-find-color{
+.btn-edit-find-color{
         background-image: linear-gradient(45deg,red, green, blue);
         padding: 10px;
         color: white;
         justify-content: center;
 }
-.btnedit-bc{
+.btn-edit-bc{
         background: gray;
         padding: 10px;
         color: white;
         justify-content: center;
 }
-     .btnedit{
+.btn-edit-forms{
+  display: inline-block;
+  margin: .5em;
+  background-color: purple;
+  color: white;
+      -webkit-transition: box-shadow 280ms cubic-bezier(0.4,0,0.2,1);
+    transition: box-shadow 280ms cubic-bezier(0.4,0,0.2,1);
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    -webkit-transition: background .2s .1s;
+    transition: background .2s .1s;
+    cursor: pointer;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: none;
+    min-width: auto;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 0;
+}
+.btn-edit{
         background-color: red;
         padding: 10px;
         border-radius: 15px;
