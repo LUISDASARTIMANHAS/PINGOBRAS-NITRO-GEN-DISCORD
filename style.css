@@ -161,7 +161,7 @@ a:hover{
   transform: translateY(5px);
 }
 .chat{
-  display: none;
+  display: block;
   border: 5px solid black;
   z-index: 9;
 }

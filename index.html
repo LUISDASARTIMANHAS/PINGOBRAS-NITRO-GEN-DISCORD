@@ -13,25 +13,8 @@
     <button 
                   class="btn-open-chat btnC" 
                   id="jsDescerBatePapo"
-                  onclick="openForm()">Bate-Papo</button>
-    
-    
-<div class="chat" id="jschat">
-  <form 
-        action="/action_page.php" 
-        class="form-chat">
-    <h1>Bate-Papo</h1>
-    <label 
-           for="msg"><b>MENSAGENS:</b></label>
-    <textarea 
-              placeholder="OI tudo bem?.." 
-              name="msg" 
-              required>
-    </textarea>
-    <button disabled type="submit" class="btn-enviar-msm">Enviar msm</button>
-    <button type="button" class="btn-cancel-msm" onclick="closeForm()">Fechar Bate-Papo</button>
-  </form>
-</div>
+                  onclick="openChat()">Bate-Papo</button>
+  
     <!--
       This is the body of the page
       Look at the elements and see how they appear in the rendered page on the right
@@ -42,7 +25,7 @@
 
     <!-- The wrapper and content divs set margins and positioning -->
     <div class="tela-altura">
-      <div class="content" role="main">
+      <div class="conteudo" role="main">
         <!-- This is the start of content for our page -->
       <h1 class="title">PINGOBRAS ADMINISTRAÇÃO!</h1>
       <div class="links"></div>
@@ -137,7 +120,26 @@
              /> 
        EDITAR BANCO DE DADOS LOGS 
      </a>
-    
+  
+        
+  <div class="chat" id="jsadminchat">
+  <form 
+        action="/action_page.php" 
+        class="form-chat">
+  <h1>Bate-Papo</h1>
+  <label 
+           for="msg"><b>MENSAGENS:</b></label>
+  <textarea 
+              placeholder="OI tudo bem?.." 
+              name="msg" 
+              required>
+  </textarea>
+  <button disabled type="submit" class="btn-enviar-msm">Enviar msm</button>
+  <button type="button" class="btn-cancel-msm" onclick="closeChat()">Fechar Bate-Papo</button>
+  </form>
+  </div>
+      
+        
       </div></div>
    </body> 
     <!-- Meta tags for SEO and social sharing -->
