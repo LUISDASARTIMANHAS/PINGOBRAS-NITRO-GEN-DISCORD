@@ -155,55 +155,11 @@ a:hover{
   margin: 0 1rem;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 100px;
-}
 
-/* Navigation grid */
-.divider {
-  padding: 0 1rem;
-}
-
-/* Button - Add it from the README instructions */
- btn,input{
-  border: 3px solid black;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 1px;
-  transition: 500ms;
-}
 /* Interactive image */
 .illustration:active {
   transform: translateY(5px);
 }
- .dipped {
-  transform: translateY(5px);
-   background: green;
-}
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-chat {
-  background-color: gray;
-  color: white;
-  padding: 16px;
-  border: 3px solid black;
-  cursor: pointer;
-  width: 75%;
-}
-.open-chat:hover{
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  color: gold;
-  transform: translateY(5px);
-  transition: all .3s ease-out;
-  opacity: 0.8;
-}
-
-/* The popup chat - hidden by default */
 .chat{
   display: none;
   border: 5px solid black;
@@ -212,58 +168,22 @@ a:hover{
 
 /* Add styles to the form container */
 .form-chat {
-  color: black;
+  color: white;
   max-width: 100%;
   padding: 7px;
   background-color: gray;
 }
 
-/* Full-width textarea */
 .form-chat textarea {
   color: black;
   width: 100%;
+  height: 100%;
   padding: 10px;
   border: 5px solid black;
-  background: transparent;
+  background: white;
 }
 
-/* When the textarea gets focus, do something */
 .form-chat textarea:focus {
-  background-color: white;
+  background-color: gold;
   outline: none;
-}
-
-/* Set a style for the submit/login button */
-.btn-enviar{
-  background-color: green;
-  color: white;
-  padding: 16px 20px;
-  border: 5px solid black;
-  cursor: pointer;
-  width: 100%;
-}
-.btn-enviar:hover{
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  color: gold;
-  transform: translateY(5px);
-  transition: all .3s ease-out;
-  opacity: 1;
-}
-
-.btn-cancel{
-  color: white;
-  padding: 16px 20px;
-  border: 5px solid black;
-  cursor: pointer;
-  width: 100%;
-  background-color: red;
-}
-.btn-cancel:hover{
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  color: gold;
-  transform: translateY(5px);
-  transition: all .3s ease-out;
-  opacity: 1;
 }

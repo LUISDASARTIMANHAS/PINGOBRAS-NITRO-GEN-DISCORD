@@ -10,16 +10,17 @@
     
   </head>
   <body>
-    <button class="open-chat" onclick="open()">ABRIR CHAT</button>
-
+    <button 
+                  class="btn-open-chat btnC" 
+                  id="jsDescerBatePapo"
+                  onclick="openForm()">Bate-Papo</button>
+    
+    
 <div class="chat" id="jschat">
-
   <form 
         action="/action_page.php" 
         class="form-chat">
-    
     <h1>Bate-Papo</h1>
-
     <label 
            for="msg"><b>MENSAGENS:</b></label>
     <textarea 
@@ -27,9 +28,8 @@
               name="msg" 
               required>
     </textarea>
-
-    <button type="submit" class="btn-enviar">ENVIAR</button>
-    <button type="button" class="btn-cancel" onclick="closeChat()">FECHAR CHAT</button>
+    <button disabled type="submit" class="btn-enviar-msm">Enviar msm</button>
+    <button type="button" class="btn-cancel-msm" onclick="closeForm()">Fechar Bate-Papo</button>
   </form>
 </div>
     <!--
@@ -159,7 +159,10 @@
     />
     <meta name="twitter:card" content="summary" />
   
-  <link rel="stylesheet" href="https://pingobras.glitch.me/btn.css" />
+  <link rel="stylesheet" href="https://pingobras.glitch.me/css/style.css" />
+  <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
+  <script src="https://pingobras.glitch.me/js/script.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/STORAGE.js" defer></script>
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
 </html>
