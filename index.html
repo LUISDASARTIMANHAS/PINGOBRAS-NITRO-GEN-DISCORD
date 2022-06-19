@@ -17,6 +17,12 @@
       <h1 class="title">PINGOBRAS ADMINISTRAÇÃO!</h1>
       <div class="links"></div>
         
+        <div class="list-changelogs">  
+          <p>ADMINISTRADOR ACCOUNT:</p>
+          <p id="adminStatus">NÃO CONECTADA</p>
+          <p>ADMIN SALDO:</p>
+          <div class="green-title" id="currentSaldo">SEM SALDO</div>
+        </div>
         
         <button 
                   class="btn-open-chat btnC" 
@@ -135,7 +141,27 @@
   </form>
 </div>
       
-        
+        <script>
+const loopToken = setInterval(refreshDesconect, 5000);
+
+function refreshDesconect() {
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log(tokenR.token);
+  
+if(tokenR.token != "desconectado") {
+console.log("Usuario conectado!")
+}
+else {
+alert("usuario deslogado")
+const tokenSair = {token: "desconectado"};
+const CryptotokenS = JSON.stringify(tokenSair);
+console.log("codificando token");
+localStorage.setItem("JsonToken", CryptotokenS);
+console.log("token redefinido");
+window.location.href = "https://pingobras.glitch.me"}
+}
+</script>
       </div></div>
    </body> 
     <!-- Meta tags for SEO and social sharing -->
@@ -159,7 +185,11 @@
   
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/style.css" />
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
-  <script src="https://pingobras.glitch.me/js/script.js" defer></script>
+    
+    <script src="https://pingobras.glitch.me/js/script.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/calcs.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/functions.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/autentication.js" defer></script>
     <script src="https://pingobras.glitch.me/js/STORAGE.js" defer></script>
     <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
