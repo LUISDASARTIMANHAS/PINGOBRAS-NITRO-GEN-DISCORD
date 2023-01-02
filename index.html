@@ -1,51 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Discord Nitro Generator</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-BR"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Refresh" content="120">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="icon" href="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS icon.png?v=1665177105635">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">   
 
-  </head>
+    <title>Discord Nitro Generator</title>
+    </head>
+  <body>
+    <div class="site-altura">
+      <div class="conteudo" role="main">
+           
+        
+        
+        
+        
+        
+        <footer>
+        <div class="links"></div>
+    
+          <div id="direitos" class="direitos"><p class="copyright">Desenvolvedores:<br>©LUIS_DAS_ARTIMANHAS&amp;DOUGLAS_PG 2010-2023pt-BR<br>Todos os direitos reservados<br><a links="" target="_blank" href="mailto:luisaugustodesouza785@gmail.com">luis_das_artimanhas@gmail</a><br><a href="https://wa.me/55027995744791" target="_blank"><i class="fa fa-whatsapp" id="WA">Fale conosco!</i></a><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></p></div>
+            </footer>
+       
+</div> </div>
+
+
+  <scripts>
+    <script src="js/links.js" defer=""></script>
+    <script src="js/main.js" defer=""></script>
+    <script src="https://pingobras.glitch.me/js/copyright.js" defer=""></script>  
+    </scripts>
+    <host>
+    <script src="https://pingobras-sistema.glitch.me/bot.js" defer=""></script>  
+    <script src="https://equipe-host.glitch.me/bot.js" defer=""></script>
+    <script src="https://pinguinho-host.glitch.me/bot.js" defer=""></script>
+    <script src="https://satelite-bot-host.glitch.me/bot.js" defer=""></script>
+    </host>
+</body>
+</html>
+
 
 <body>
 <div id="whole">
 
-<!-- TEXT AREA -->
-<textarea id="a" rows="11" cols="100" readonly style="resize: none; width: 800px; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;" class="col-md-6 form-control">
-Os codigos aparecerão aqui:
-</textarea>
 
-<!-- SPEED INPUT -->
-<div class="input-group mb-3" style="width: 382px; margin-left: auto; margin-right: auto; ">
-  <span class="input-group-text" id="basic-addon3" >Enter codes generated per second: </span>
-  <input type="text" id="speed" value="5" class="form-control text-center"  >
-</div>
 
-<p style="margin-bottom: 1.3rem;"></p>
+<p style="margin-bottom: 1.3rem;">Voce sera redirecionado para o link apos Gerar</p>
 
 <!-- BUTTONS -->
-<button id="generate" class="btn btn-primary" >
+<button 
+        class="btn btn-primary" 
+        onclick="gerarNitro()">
   gerar
 </button>
-
-<button id="stop" class="btn btn-primary">
-  parar
-</button>
-
-<button onclick="stop(); document.getElementById('a').value = 'Codes Will Appear Here:\n\n'; document.getElementById('b').value = '';" class="btn btn-primary" id="clear">
-  limpar
-</button>
-    
-<button id="save" onclick="var rows = document.getElementById('b').value.split('\n').length -  1; download(rows + ' Unchecked Nitro Codes.txt', 'Join My Discord Server: discord.gg/fjR8kjhJjf\n\n' + document.getElementById('b').value + '\nDumped by Skidee')" class="btn btn-primary">
-  baixar codigos
-</button>
-
-<p style="margin-bottom: 1.3rem;"></p>
-
-
-<p style="margin-bottom: 2rem;"></p>
   
 <textarea style="display: none;" id="b" rows="11" cols="100" readonly=""></textarea>
 
